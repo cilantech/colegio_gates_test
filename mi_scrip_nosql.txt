@@ -140,6 +140,18 @@ db.estudiantes.insertOne({
 });
 
 
+CONSULTAS
+
+db.grados.findOne({ nomenclatura: "9A" })._id;
+
+db.estudiantes.find({ grado_id: grupoNovenoAId });
+
+
+
+
+
+
+
 
 
 
