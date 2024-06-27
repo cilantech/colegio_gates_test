@@ -1,6 +1,5 @@
 
-
-Creacion de colleciones
+CREACCION DE COLLECIONES
 
 db.createCollection("estudiantes");
 { ok: 1 }
@@ -23,10 +22,49 @@ db.createCollection("tipos_de_roles");
 db.createCollection("jornadas");
 
 
-Carga de datos y creacion de parametros 
+CARGA DE PARAMETROS
+
+SEDES
 
 db.sedes.insertOne({"nombre":"seccional rural", "direccion": "vereda el coco km 25", "numero_contacto": "018003000444", "resolucion": "resolucion 051532", "plantas": "2", "salones": "20"});
 
 db.sedes.insertOne({"nombre":"seccional Suburbana", "direccion": "Diagonal 10 #234", "numero_contacto": "3501112222", "resolucion": "Resolución 24680", "plantas": "3", "salones": "25"});
 
 db.sedes.insertOne({"nombre":"seccional urbana", "direccion": "Avenida Central #789", "numero_contacto": "3201234567", "resolucion": "resolución 98765", "plantas": "5", "salones": "45"});
+
+TIPOS DE DATOS
+
+db.tipos_de_documentos.insertOne({"nombre":"cedula de ciudanania", "abreviacion":"CC"});
+
+db.tipos_de_documentos.insertOne({"nombre":"Tarjeta de identidad", "abreviacion":"TI"});
+
+db.tipos_de_documentos.insertOne({"nombre":"Pasaporte", "abreviacion":"PSP"});
+
+TIPOS DE ROLES
+
+db.tipos_de_roles.insertOne({"nombre":"maestro", "abreviacion":"matr"});
+
+db.tipos_de_roles.insertOne({"nombre":"Aseo", "abreviacion":"as"});
+
+db.tipos_de_roles.insertOne({"nombre":"seguridad", "abreviacion":"seg"});
+
+JORNADAS
+
+db.jornadas.insertOne({"nombre":"mañana", "abreviacion":"am"});
+
+db.jornadas.insertOne({"nombre":"intermedio", "abreviacion":"inter"});
+
+db.jornadas.insertOne({"nombre":"tarde", "abreviacion":"pm"});
+
+MATERIAS
+
+db.materias.insertOne({"nombre":"matematicas", "abreviacion":"mat","descripcion":"conoce el maravilloso mundo de los numeros"});
+
+db.materias.insertOne({"nombre":"lengua castellana", "abreviacion":"esp","descripcion":"conoce el maravilloso mundo de nuestro idioma"});
+
+db.materias.insertOne({"nombre":"fisica", "abreviacion":"fis","descripcion":"conoce el maravilloso mundo de nuestro los fenomenos que gobiernan nuestra realidad"});
+
+
+
+
+
