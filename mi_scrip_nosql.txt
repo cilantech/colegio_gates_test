@@ -1,0 +1,32 @@
+
+
+Creacion de colleciones
+
+db.createCollection("estudiantes");
+{ ok: 1 }
+db.createCollection("sedes");
+{ ok: 1 }
+db.createCollection("empleados");
+{ ok: 1 }
+db.createCollection("maestros");
+{ ok: 1 }
+db.createCollection("materias");
+{ ok: 1 }
+db.createCollection("materias_maestros");
+{ ok: 1 }
+db.createCollection("grados");
+{ ok: 1 }
+db.createCollection("tipos_de_documentos");
+{ ok: 1 }
+db.createCollection("tipos_de_roles");
+{ ok: 1 }
+db.createCollection("jornadas");
+
+
+Carga de datos y creacion de parametros 
+
+db.sedes.insertOne({"nombre":"seccional rural", "direccion": "vereda el coco km 25", "numero_contacto": "018003000444", "resolucion": "resolucion 051532", "plantas": "2", "salones": "20"});
+
+db.sedes.insertOne({"nombre":"seccional Suburbana", "direccion": "Diagonal 10 #234", "numero_contacto": "3501112222", "resolucion": "Resolución 24680", "plantas": "3", "salones": "25"});
+
+db.sedes.insertOne({"nombre":"seccional urbana", "direccion": "Avenida Central #789", "numero_contacto": "3201234567", "resolucion": "resolución 98765", "plantas": "5", "salones": "45"});
