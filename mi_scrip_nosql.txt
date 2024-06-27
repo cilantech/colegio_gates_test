@@ -64,6 +64,83 @@ db.materias.insertOne({"nombre":"lengua castellana", "abreviacion":"esp","descri
 
 db.materias.insertOne({"nombre":"fisica", "abreviacion":"fis","descripcion":"conoce el maravilloso mundo de nuestro los fenomenos que gobiernan nuestra realidad"});
 
+EMPLEADOS
+
+db.empleados.insertOne({
+  "nombre_completo": "Ricardo Santa Cruz",
+  "fecha_de_nacimiento": ISODate("2001-10-08"),
+  "numero_de_documento": "1010225544",
+  "sede_id": ObjectId("667d7820bfc7d896891ba565"),
+"rol_id": ObjectId("667d97a6bfc7d896891ba56e"),
+"tipo_documento_id": ObjectId("667d9685bfc7d896891ba56d")
+});
+
+db.empleados.insertOne({
+  "nombre_completo": "Javier Ruiz Cadrs",
+  "fecha_de_nacimiento": ISODate("2002-11-09"),
+  "numero_de_documento": "45632254",
+  "sede_id": ObjectId("667d7820bfc7d896891ba567"),
+"rol_id": ObjectId("667d97a6bfc7d896891ba570"),
+"tipo_documento_id": ObjectId("667d95fcbfc7d896891ba56b")
+});
+
+db.empleados.insertOne({
+  "nombre_completo": "Pedronel Osorio Restrepo",
+  "fecha_de_nacimiento": ISODate("1991-12-09"),
+  "numero_de_documento": "121226645",
+  "sede_id": ObjectId("667d7820bfc7d896891ba565"),
+"rol_id": ObjectId("667d97a6bfc7d896891ba56e"),
+"tipo_documento_id": ObjectId("667d9685bfc7d896891ba56d")
+});
+
+MAESTROS
+
+db.maestros.insertOne({
+  "especialidad": "Matematicas puras",
+  "empleado_id": ObjectId("667d9e41bfc7d896891ba577")
+});
+
+db.maestros.insertOne({
+  "especialidad": "Lenguas",
+  "empleado_id": ObjectId("667d7820bfc7d896891ba565")
+});
+
+db.maestros.insertOne({
+  "especialidad": "Fisica",
+  "empleado_id": ObjectId("667d7820bfc7d896891ba565")
+});
+
+MATERIAS MAESTROS
+
+db.materias_maestros.insertOne({
+  "materias_id": ObjectId("667da18abfc7d896891ba57a"),
+"maestros_id": ObjectId("667d99f4bfc7d896891ba574")
+});
+
+GRADOS
+
+db.grados.insertOne({
+  "nombre": "Noveno A",
+  "nomenclatura": "9A",
+  "jornada_id": ObjectId("667d98b3bfc7d896891ba571"),
+"maestros_materias_id": ObjectId("667da256bfc7d896891ba57e")
+});
+
+
+ESTUDIANTES
+
+db.estudiantes.insertOne({
+  "nombre_completo": "Pasxal Rodrigeuz Denver",
+  "fecha_de_nacimiento": ISODate("2009-12-09"),
+  "numero_de_documento": "1010165522",
+  "sede_id": ObjectId("667d98b3bfc7d896891ba572"),
+"rol_id": ObjectId("667da3e2bfc7d896891ba57f"),
+"tipo_documento_id": ObjectId("667d9685bfc7d896891ba56c"),
+"grado_id": ObjectId("667da45ebfc7d896891ba580")
+});
+
+
+
 
 
 
